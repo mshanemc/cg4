@@ -1,7 +1,6 @@
 {
     "orgName": "shane.mclaughlin Company",
     "edition": "Developer",
-    "features": ["IOT"],
     "orgPreferences" : {
         "enabled": ["S1DesktopEnabled", "PathAssistantsEnabled"],
         "disabled": ["S1EncryptedStoragePref2"]
