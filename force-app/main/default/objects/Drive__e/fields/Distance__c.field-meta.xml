@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Distance</label>
+    <type>Number</type>
+    <fullName>Distance__c</fullName>
+    <scale>2</scale>
+    <precision>16</precision>
+</CustomField>

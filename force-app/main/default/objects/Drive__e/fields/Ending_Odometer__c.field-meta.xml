@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Ending Odometer</label>
+    <type>Number</type>
+    <fullName>Ending_Odometer__c</fullName>
+    <scale>1</scale>
+    <precision>17</precision>
+</CustomField>
