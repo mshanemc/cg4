@@ -1,0 +1,32 @@
+{
+  "name": "cg4",
+  "version": "0.0.1",
+  "description": "iot stuff",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sfdx shane:org:delete; ./orgInit.sh",
+    "reset-data": "sfdx force:apex:execute -f scripts/dataWipe.cls && sfdx force:apex:execute -f scripts/init.cls"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "force-app"
+    ],
+    "exec": "sfdx force:source:push",
+    "ext": "cls,xml,json,js,trigger,cmp,css,design,svg",
+    "delay": "2500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshanemc/cg4.git"
+  },
+  "author": "Shane McLaughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mshanemc/cg4/issues"
+  },
+  "homepage": "https://github.com/mshanemc/cg4#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
