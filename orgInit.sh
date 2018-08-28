@@ -5,5 +5,5 @@ sfdx force:apex:execute -f scripts/init.cls
 
 sfdx force:source:push
 sfdx force:user:permset:assign -n drive
-sfdx shane:iot:enable --insights
+# sfdx shane:iot:enable --insights
 sfdx force:org:open

@@ -1,6 +1,8 @@
 {
-    "orgName": "shane.mclaughlin Company",
-    "edition": "Developer",
+    "orgName": "df18Campground",
+    "description": "4-IoT",
+    "sourceOrg": "00D6A000001h6L5UAI",
+
     "orgPreferences" : {
         "enabled": ["S1DesktopEnabled", "PathAssistantsEnabled"],
         "disabled": ["S1EncryptedStoragePref2"]
