@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrchestrationContext xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <events>
+        <eventType>PlatformEvent</eventType>
+        <orchestrationEvent xsi:nil="true"/>
+        <platformEvent>Drive__e</platformEvent>
+        <platformEventPrimaryKey>VIN__c</platformEventPrimaryKey>
+    </events>
+    <masterLabel>Vehicle Context</masterLabel>
+    <runtimeType>Standard</runtimeType>
+    <salesforceObject>Vehicle__c</salesforceObject>
+    <salesforceObjectPrimaryKey>VIN__c</salesforceObjectPrimaryKey>
+</OrchestrationContext>
