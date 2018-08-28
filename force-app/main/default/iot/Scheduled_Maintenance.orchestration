@@ -1,0 +1,1 @@
+{"global":{"id":0,"initial":false,"name":"Always","rules":[{"actions":[],"id":0}]},"properties":{},"states":[{"id":1,"initial":true,"name":"Default","rules":[{"actions":[],"id":0}]}],"variables":[]}
