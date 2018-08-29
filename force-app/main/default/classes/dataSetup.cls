@@ -1,7 +1,7 @@
 public with sharing class dataSetup {
 
     public static void go() {
-        Vehicle__c v = [select id from Vehicle__c where Vin__c = 'YV1DZ8256C2271234'];
+        Vehicle__c v = [select id, Scheduled_Maintenance__c from Vehicle__c where Vin__c = 'YV1DZ8256C2271234'];
 
         list<Scheduled_Maintenance__c> SMs = new list<Scheduled_Maintenance__c>();
 

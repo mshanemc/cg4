@@ -1,0 +1,1 @@
+mutliplexSelfReg.reg();

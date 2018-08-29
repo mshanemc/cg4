@@ -1,2 +1,1 @@
 dataSetup.go();
-mutliplexSelfReg.reg();
