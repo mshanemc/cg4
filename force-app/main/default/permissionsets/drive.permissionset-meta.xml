@@ -31,7 +31,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Scheduled_Maintenance__c.Expected_Cost__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -73,6 +73,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Scheduled_Maintenance__c.Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Scheduled_Maintenance__c.is_Future__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
