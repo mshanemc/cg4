@@ -3,5 +3,5 @@
 #
 
 package.xml
-flows
-flowDefinitions
+**/flows
+**/flowDefinitions

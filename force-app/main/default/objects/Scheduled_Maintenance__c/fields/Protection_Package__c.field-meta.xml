@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protection_Package__c</fullName>
+    <externalId>false</externalId>
+    <formula>Vehicle__r.Protection_Package_Premier__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Protection Package</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

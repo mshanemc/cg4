@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <label>Completed on Time</label>
+    <type>Checkbox</type>
+    <fullName>Completed_on_Time__c</fullName>
+    <defaultValue>false</defaultValue>
+    <required>false</required>
+    <unique>false</unique>
+    <externalId>false</externalId>
+    <description>Customer completed maintenance by due date/mileage</description>
+    <inlineHelpText>Customer completed maintenance by due date/mileage</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>
