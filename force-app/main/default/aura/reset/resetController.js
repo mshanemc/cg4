@@ -6,8 +6,10 @@
             var state = a.getState();
             if (state === "SUCCESS") {
                 console.log(a);
-                $A.enqueueAction(action2);
-                // $A.get("e.force:showToast").setParams({"type" : "success", "message" : "Demo Reset"}).fire();
+                window.setTimeout(
+                    $A.getCallback(function(){
+                        $A.enqueueAction(action2)
+                    }), 1000);
             } else if (state === "ERROR") {
                 console.log(a.getError());
             }
@@ -18,7 +20,10 @@
             var state = a.getState();
             if (state === "SUCCESS") {
                 console.log(a);
-                $A.enqueueAction(action3);
+                window.setTimeout(
+                    $A.getCallback(function () {
+                        $A.enqueueAction(action3);
+                    }), 1000);
             } else if (state === "ERROR") {
                 console.log(a.getError());
             }
@@ -29,7 +34,10 @@
             var state = a.getState();
             if (state === "SUCCESS") {
                 console.log(a);
-                $A.enqueueAction(action4);
+                window.setTimeout(
+                    $A.getCallback(function () {
+                        $A.enqueueAction(action4);
+                    }), 1000);
             } else if (state === "ERROR") {
                 console.log(a.getError());
             }
@@ -40,7 +48,7 @@
             var state = a.getState();
             if (state === "SUCCESS") {
                 console.log(a);
-                $A.get("e.force:showToast").setParams({"type" : "success", "message" : "Demo Reset"}).fire();
+                $A.get("e.force:showToast").setParams({ "type": "success", "message": "Demo Reset" }).fire();
             } else if (state === "ERROR") {
                 console.log(a.getError());
             }

@@ -27,15 +27,8 @@ public with sharing class dataReset {
         Vehicle__c v = [select id, Vin__c, Scheduled_Maintenance__c from Vehicle__c where Vin__c = 'YV1DZ8256C2271234'];
         Scheduled_Maintenance__c SM = [select id, Status__c from Scheduled_Maintenance__c where id =: v.Scheduled_Maintenance__c];
 
-        Drive__e d1 = new Drive__e();
         SM.Status__c = 'Completed';
         update SM;
-
-    }
-
-    @AuraEnabled
-    public static void dataReset4() {
-        Vehicle__c v = [select id, Vin__c, Scheduled_Maintenance__c from Vehicle__c where Vin__c = 'YV1DZ8256C2271234'];
 
         // drop event
         Drive__e d2 = new Drive__e();
@@ -45,7 +38,14 @@ public with sharing class dataReset {
 
     }
 
+    @AuraEnabled
+    public static void dataReset4() {
+        Vehicle__c v = [select id, Vin__c, Scheduled_Maintenance__c from Vehicle__c where Vin__c = 'YV1DZ8256C2271234'];
 
+        Scheduled_Maintenance__c SM = [select id, Status__c from Scheduled_Maintenance__c where id =: v.Scheduled_Maintenance__c];
 
+        SM.Status__c = 'Not scheduled';
+        update SM;
+    }
 
 }
