@@ -8,10 +8,10 @@ sfdx force:source:push
 sfdx force:user:permset:assign -n drive
 sfdx force:apex:execute -f scripts/initLocal.cls
 sfdx force:apex:execute -f scripts/initMultiplexer.cls
+sfdx force:user:password:generate
+sfdx force:org:open
 
 # sfdx shane:iot:enable --insights
 sfdx shane:iot:activation -n Scheduled_Maintenance -r
 
 sfdx force:data:record:create -s Drive__e -v "Vin__c='YV1DZ8256C2271234' Ending_Odometer__c=200"
-
-sfdx force:org:open
