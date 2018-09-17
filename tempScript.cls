@@ -1,0 +1,1 @@
+System.debug(System.Url.getSalesforceBaseUrl().toExternalForm());

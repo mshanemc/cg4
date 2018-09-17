@@ -1,4 +1,5 @@
 sfdx force:org:create -f config/project-scratch-def.json -d 1 -s
+sfdx shane:org:domain:verify
 sfdx shane:github:package:install --githubuser mshanemc --repo volvo-base
 sfdx shane:github:package:install --githubuser mshanemc --repo platform-event-multiplexer-client
 sfdx shane:github:package:install --githubuser mshanemc --repo lightningErrorHandler
