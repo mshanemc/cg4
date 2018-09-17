@@ -1,3 +1,5 @@
 <aura:component implements="force:lightningQuickAction" controller="dataReset">
   <lightning:button variant="destructive" label="Reset" title="Reset" onclick="{! c.handleClick }" />
+  <lightning:button variant="neutral" label="Re-sync" title="Resync with the platform event forwarder" onclick="{! c.resync }" />
+
 </aura:component>

@@ -1,4 +1,18 @@
 ({
+    resync : function(component, event, helper) {
+        var action = component.get("c.ResyncWithHeroku");
+        action.setCallback(this, function(a){
+            var state = a.getState();
+            if (state === "SUCCESS") {
+                console.log(a);
+                $A.get("e.force:showToast").setParams({ "type": "success", "message": "Resynced" }).fire();
+            } else if (state === "ERROR") {
+                console.log(a.getError());
+            }
+        });
+        $A.enqueueAction(action);
+    },
+
     handleClick : function(component) {
         console.log('handleClick is running');
         var action1 = component.get("c.dataReset1");
