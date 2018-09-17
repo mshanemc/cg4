@@ -1,5 +1,5 @@
 ({
-    resync : function(component, event, helper) {
+    resync : function(component) {
         var action = component.get("c.ResyncWithHeroku");
         action.setCallback(this, function(a){
             var state = a.getState();
@@ -8,6 +8,7 @@
                 $A.get("e.force:showToast").setParams({ "type": "success", "message": "Resynced" }).fire();
             } else if (state === "ERROR") {
                 console.log(a.getError());
+                component.find('leh').passErrors(a.getError());
             }
         });
         $A.enqueueAction(action);
@@ -26,6 +27,8 @@
                     }), 1000);
             } else if (state === "ERROR") {
                 console.log(a.getError());
+                component.find('leh').passErrors(a.getError());
+
             }
         });
 
@@ -40,6 +43,8 @@
                     }), 1000);
             } else if (state === "ERROR") {
                 console.log(a.getError());
+                component.find('leh').passErrors(a.getError());
+
             }
         });
 
@@ -54,6 +59,8 @@
                     }), 1000);
             } else if (state === "ERROR") {
                 console.log(a.getError());
+                component.find('leh').passErrors(a.getError());
+
             }
         });
 
@@ -65,6 +72,8 @@
                 $A.get("e.force:showToast").setParams({ "type": "success", "message": "Demo Reset" }).fire();
             } else if (state === "ERROR") {
                 console.log(a.getError());
+                component.find('leh').passErrors(a.getError());
+
             }
         });
 

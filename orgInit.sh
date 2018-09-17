@@ -1,6 +1,7 @@
 sfdx force:org:create -f config/project-scratch-def.json -d 1 -s
 sfdx shane:github:package:install --githubuser mshanemc --repo volvo-base
 sfdx shane:github:package:install --githubuser mshanemc --repo platform-event-multiplexer-client
+sfdx shane:github:package:install --githubuser mshanemc --repo lightningErrorHandler
 sfdx force:user:permset:assign -n VehiclesPerms
 sfdx force:apex:execute -f scripts/init.cls
 
