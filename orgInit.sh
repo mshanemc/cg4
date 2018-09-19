@@ -1,5 +1,4 @@
 sfdx force:org:create -f config/project-scratch-def.json -d 1 -s
-sfdx shane:org:domain:verify
 sfdx shane:github:package:install --githubuser mshanemc --repo volvo-base
 sfdx shane:github:package:install --githubuser mshanemc --repo platform-event-multiplexer-client
 sfdx shane:github:package:install --githubuser mshanemc --repo lightningErrorHandler
@@ -11,6 +10,7 @@ sfdx force:user:permset:assign -n drive
 sfdx force:apex:execute -f scripts/initLocal.cls
 sfdx force:user:password:generate
 sfdx force:apex:execute -f scripts/initMultiplexer.cls
+sfdx shane:org:reauth --requirecustomdomain
 sfdx force:org:open
 
 # sfdx shane:iot:enable --insights
