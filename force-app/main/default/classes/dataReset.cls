@@ -48,9 +48,9 @@ public with sharing class dataReset {
         update SM;
     }
 
-    @AuraEnabled
     public static void ResyncWithHeroku(){
         mutliplexSelfReg.reg();
     }
+
 
 }

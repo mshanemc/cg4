@@ -1,0 +1,12 @@
+<apex:page controller="dataReset" lightningStylesheets="true">
+
+<apex:slds />
+
+<!-- <button onclick="getRemoteAccount()">Resync</button> -->
+<div class="slds-scope">
+  <apex:form>
+    <apex:commandButton action="{!ResyncWithHeroku}" value="Resync" id="Resync" />
+  </apex:form>
+</div>
+
+</apex:page>
