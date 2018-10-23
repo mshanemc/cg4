@@ -1,7 +1,7 @@
 {
     "orgName": "df18Campground",
     "description": "4-IoT",
-    "sourceOrg": "00D6A000001h6L5UAI",
+    "template": "0TT6A000006BlTd",
 
     "orgPreferences" : {
         "enabled": ["S1DesktopEnabled", "PathAssistantsEnabled"],
