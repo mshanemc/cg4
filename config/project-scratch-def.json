@@ -2,9 +2,11 @@
     "orgName": "df18Campground",
     "description": "4-IoT",
     "template": "0TT6A000006BlTd",
-
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled", "PathAssistantsEnabled"],
-        "disabled": ["S1EncryptedStoragePref2"]
+    "settings": {
+        "orgPreferenceSettings": {
+            "pathAssistantsEnabled": true,
+            "s1DesktopEnabled": true,
+            "s1EncryptedStoragePref2": false
+        }
     }
 }
