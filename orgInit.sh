@@ -10,7 +10,6 @@ sfdx force:user:permset:assign -n drive
 sfdx force:apex:execute -f scripts/initLocal.cls
 sfdx force:user:password:generate
 sfdx force:apex:execute -f scripts/initMultiplexer.cls
-sfdx shane:org:reauth --requirecustomdomain --json
 sfdx force:org:open
 
 # sfdx shane:iot:enable --insights
